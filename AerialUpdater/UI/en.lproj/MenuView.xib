@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17700" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17700"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -10,7 +10,7 @@
             <connections>
                 <outlet property="companionTitleLabel" destination="yJN-Go-jS8" id="cxF-iC-wZg"/>
                 <outlet property="goodTrick" destination="7ly-UJ-lL0" id="yHd-Iv-qOj"/>
-                <outlet property="launchAsWallpaper" destination="W1D-1o-AsE" id="zPE-6D-8kW"/>
+                <outlet property="launchAsWallpaperMenu" destination="KCi-N2-g8o" id="bw3-H8-cK5"/>
                 <outlet property="launchHostedSettings" destination="tut-tg-wBX" id="OrS-bL-vLy"/>
                 <outlet property="menuAutomatic" destination="c1V-9r-2xp" id="hj0-Kd-mHb"/>
                 <outlet property="menuBeta" destination="B8x-rn-xbe" id="P0J-eq-Tx3"/>
@@ -228,11 +228,9 @@
                                     <action selector="aerialInWindow:" target="-2" id="RLf-7x-QoY"/>
                                 </connections>
                             </menuItem>
-                            <menuItem title="Launch Aerial as Wallpaper" id="W1D-1o-AsE">
+                            <menuItem title="Launch Aerial as Wallpaper" state="on" id="9bE-cO-tmT">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <connections>
-                                    <action selector="launchAsWallpaper:" target="-2" id="oIF-RC-Yal"/>
-                                </connections>
+                                <menu key="submenu" title="Launch Aerial as Wallpaper" autoenablesItems="NO" id="KCi-N2-g8o"/>
                             </menuItem>
                         </items>
                     </menu>
